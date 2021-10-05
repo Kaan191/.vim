@@ -1,60 +1,66 @@
+" set color scheme
+colorscheme codedark
 
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2019 Jan 26
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" set syntax highlighting
+syntax enable
 
-" When started as "evim", evim.vim will already have done these settings, bail
-" out.
-if v:progname =~? "evim"
-  finish
-endif
+" show command in bottom bar
+set showcmd 
 
-" Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+" search settings with highlight clearing key map
+set hlsearch                             " highlight matches"
+set incsearch                            " search as characters are entered"
+set showmatch                            " highlights similar strings on cursor
+nnoremap <leader>h :noh<CR>
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file (restore to previous version)
-  if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
-  endif
-endif
+" set relative numbers and display current line
+set number
+set relativenumber
 
-if &t_Co > 2 || has("gui_running")
-  " Switch on highlighting the last used search pattern.
-  set hlsearch
-endif
-
-" Put these in an autocmd group, so that we can delete them easily.
-augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-augroup END
-
-" Add optional packages.
-"
-" The matchit plugin makes the % command work better, but it is not backwards
-" compatible.
-" The ! means the package won't be loaded right away but when plugins are
-" loaded during initialization.
-if has('syntax') && has('eval')
-  packadd! matchit
-endif
-
-" numbers
-set nu
+" configure tabs
+set tabstop=4        " tab width 
+set softtabstop=4    " spaces in a <TAB>
+set expandtab        " tabs are spaces"
+set autoindent       " autoindent
 
 " fixed directory for swap, backup and undo files
 set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
+
+" change <leader> key to comma
+let mapleader = " "
+
+" configure netrw
+let g:netrw_banner       = 0  "removes banner at top"
+let g:netrw_liststyle    = 3  "NERDtree style look"
+let g:netrw_browse_split = 0  "opens file in active window"
+let g:netrw_altv	     = 1  "keeps directory in narrow vertical strip"
+let g:netrw_winsize      = 25  "set window to 25% of screen"
+
+" opens new vertical split with new file, to the right
+set splitright 
+nnoremap <leader>v :vnew<CR>
+
+" browser-like tab navigation in normal mode
+nnoremap <leader>t :tabnew<CR>:Lex<CR>
+nnoremap <leader>g :tabnext<CR>
+nnoremap <leader>G :tabprevious<CR>
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+
+" jedi-vim settings
+let g:jedi#use_tabs_not_buffers = 1 "go to, show def, open in tabs
+let g:jedi#smart_auto_mappings  = 1 "shows completion list for from / import
+
+" allow mouse / ipad track pad use
+set mouse=a
+
+" SimpylFold settings for folding
+let g:SimpylFold_fold_import = 0     "don't fold import statements
+let g:SimpylFold_fold_docstring = 0  "don't fold docstrings
+nnoremap <leader>a za
+nnoremap <leader>A zA

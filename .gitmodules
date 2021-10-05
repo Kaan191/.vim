@@ -1,0 +1,12 @@
+[submodule "pack/ui/start/vim-code-dark"]
+	path = pack/ui/start/vim-code-dark
+	url = https://github.com/tomasiser/vim-code-dark.git
+[submodule "pack/ui/start/vim-airline"]
+	path = pack/ui/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/editing/start/auto-pairs"]
+	path = pack/editing/start/auto-pairs
+	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "pack/editing/start/SimpylFold"]
+	path = pack/editing/start/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
