@@ -3,15 +3,19 @@ colorscheme codedark
 
 " set syntax highlighting
 syntax enable
+set cursorline
 
 " show command in bottom bar
 set showcmd 
+
+" keep screen focused
+set scrolloff=20
 
 " search settings with highlight clearing key map
 set hlsearch                             " highlight matches"
 set incsearch                            " search as characters are entered"
 set showmatch                            " highlights similar strings on cursor
-nnoremap <leader>h :noh<CR>
+nnoremap <leader>h :nohl<CR>
 
 " set relative numbers and display current line
 set number
@@ -38,6 +42,10 @@ let g:netrw_browse_split = 0  "opens file in active window"
 let g:netrw_altv	     = 1  "keeps directory in narrow vertical strip"
 let g:netrw_winsize      = 25  "set window to 25% of screen"
 
+" quickly navigate methods
+nmap <leader>k [m
+nmap <leader>j ]m
+
 " opens new vertical split with new file, to the right
 set splitright 
 nnoremap <leader>v :vnew<CR>
@@ -53,8 +61,8 @@ nnoremap <leader>4 4gt
 nnoremap <leader>5 5gt
 
 " jedi-vim settings
-let g:jedi#use_tabs_not_buffers = 1 "go to, show def, open in tabs
-let g:jedi#smart_auto_mappings  = 1 "shows completion list for from / import
+let g:jedi#use_splits_not_buffers = 1 "go to, show def, open in split
+let g:jedi#smart_auto_mappings    = 1 "shows completion list for from / import
 
 " allow mouse / ipad track pad use
 set mouse=a
