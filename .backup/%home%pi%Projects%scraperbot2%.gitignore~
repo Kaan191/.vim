@@ -1,6 +1,0 @@
-__pycache__/
-/*.env
-/cache/*.jsonl
-/logs/*.log
-/venv
-/.selenium.sh
