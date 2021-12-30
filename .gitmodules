@@ -13,3 +13,12 @@
 [submodule "/home/pi/.vim/pack/style/start/vim-flake8"]
 	path = /home/pi/.vim/pack/style/start/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "pack/editing/start/jedi-vim"]
+	path = pack/editing/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "pack/style/start/vim-flake8/"]
+	path = pack/style/start/vim-flake8/
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "pack/editing/start/vim-flake8"]
+	path = pack/editing/start/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
