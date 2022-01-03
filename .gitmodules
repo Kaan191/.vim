@@ -22,3 +22,6 @@
 [submodule "pack/editing/start/vim-flake8"]
 	path = pack/editing/start/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "pack/editing/start/commentary"]
+	path = pack/editing/start/commentary
+	url = https://github.com/tpope/vim-commentary
