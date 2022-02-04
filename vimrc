@@ -63,8 +63,9 @@ nnoremap <leader>5 5gt
 " jedi-vim settings
 let g:jedi#use_splits_not_buffers = 1 "go to, show def, open in split
 let g:jedi#smart_auto_mappings    = 1 "shows completion list for from / import
+let g:jedi#completions_command    = "<C-N>" "overwrites standard autocomplete with jedi-vim
 
-" allow mouse / ipad track pad use
+"allow mouse / ipad track pad use
 set mouse=a
 
 " SimpylFold settings for folding
@@ -72,3 +73,7 @@ let g:SimpylFold_fold_import = 0     "don't fold import statements
 let g:SimpylFold_fold_docstring = 0  "don't fold docstrings
 nnoremap <leader>a za
 nnoremap <leader>A zA
+
+" deal with white space and line-too-long issues
+nnoremap <leader>e 80\|
+autocmd BufWritePre *.py %s/\s\+$//e    
