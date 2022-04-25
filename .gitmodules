@@ -25,3 +25,6 @@
 [submodule "pack/editing/start/commentary"]
 	path = pack/editing/start/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "pack/editing/start/vim-python-pep8-indent"]
+	path = pack/editing/start/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent.git

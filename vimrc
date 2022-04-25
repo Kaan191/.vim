@@ -26,6 +26,7 @@ set tabstop=4        " tab width
 set softtabstop=4    " spaces in a <TAB>
 set expandtab        " tabs are spaces"
 set autoindent       " autoindent
+filetype indent on   " configures Vim to load indent files (for vim-python-pep8-indent)
 
 " fixed directory for swap, backup and undo files
 set undodir=~/.vim/.undo//
