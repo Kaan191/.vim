@@ -78,3 +78,7 @@ nnoremap <leader>A zA
 " deal with white space and line-too-long issues
 nnoremap <leader>e 80\|
 autocmd BufWritePre *.py %s/\s\+$//e    
+
+" maps autopep8 to F8
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+

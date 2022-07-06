@@ -28,3 +28,6 @@
 [submodule "pack/editing/start/vim-python-pep8-indent"]
 	path = pack/editing/start/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
+[submodule "pack/editing/start/vim-autopep8"]
+	path = pack/editing/start/vim-autopep8
+	url = https://github.com/tell-k/vim-autopep8
