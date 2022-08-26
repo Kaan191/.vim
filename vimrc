@@ -1,5 +1,19 @@
 " set color scheme
-colorscheme codedark
+packadd! dracula
+colorscheme dracula
+" packadd! codedark
+" colorscheme codedark
+" needed to improve gruvbox colours
+" if (empty($TMUX))
+"   if (has("termguicolors"))
+"     set termguicolors
+"   endif
+" endif
+" packadd! gruvbox
+" colorscheme gruvbox
+" set background=light
+" packadd! solarized8
+" colorscheme solarized8
 
 " set syntax highlighting
 syntax enable
@@ -62,7 +76,7 @@ nnoremap <leader>4 4gt
 nnoremap <leader>5 5gt
 
 " jedi-vim settings
-let g:jedi#use_splits_not_buffers = 1 "go to, show def, open in split
+let g:jedi#use_splits_not_buffers = "right" "go to, show def, open in split
 let g:jedi#smart_auto_mappings    = 1 "shows completion list for from / import
 let g:jedi#completions_command    = "<C-N>" "overwrites standard autocomplete with jedi-vim
 
@@ -81,4 +95,5 @@ autocmd BufWritePre *.py %s/\s\+$//e
 
 " maps autopep8 to F8
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+
 
