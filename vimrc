@@ -4,11 +4,11 @@ colorscheme dracula
 " packadd! codedark
 " colorscheme codedark
 " needed to improve gruvbox colours
-" if (empty($TMUX))
-"   if (has("termguicolors"))
-"     set termguicolors
-"   endif
-" endif
+if (empty($TMUX))
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
 " packadd! gruvbox
 " colorscheme gruvbox
 " set background=light
@@ -24,6 +24,9 @@ set showcmd
 
 " keep screen focused
 set scrolloff=20
+
+" change <leader> key to comma
+let mapleader = " "
 
 " search settings with highlight clearing key map
 set hlsearch                             " highlight matches"
@@ -46,9 +49,6 @@ filetype indent on   " configures Vim to load indent files (for vim-python-pep8-
 set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
-
-" change <leader> key to comma
-let mapleader = " "
 
 " configure netrw
 let g:netrw_banner       = 0  "removes banner at top"
