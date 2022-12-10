@@ -37,3 +37,6 @@
 [submodule "pack/ui/opt/gruvbox"]
 	path = pack/ui/opt/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/syntax/start/mermaid"]
+	path = pack/syntax/start/mermaid
+	url = https://github.com/mracos/mermaid.vim
