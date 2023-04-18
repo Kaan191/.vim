@@ -40,3 +40,6 @@
 [submodule "pack/syntax/start/mermaid"]
 	path = pack/syntax/start/mermaid
 	url = https://github.com/mracos/mermaid.vim
+[submodule "pack/ui/opt/vim-distinguished"]
+	path = pack/ui/opt/vim-distinguished
+	url = https://github.com/Lokaltog/vim-distinguished.git
