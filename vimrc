@@ -12,7 +12,7 @@ endif
 
 " set color scheme
 colorscheme dracula
-" colorscheme distinguished
+colorscheme distinguished
 " colorscheme vim-code-dark
 " colorscheme gruvbox
 set background=dark
