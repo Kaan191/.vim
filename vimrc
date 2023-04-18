@@ -1,19 +1,21 @@
-" set color scheme
+" add color scheme packs
+packadd! vim-code-dark
 packadd! dracula
-colorscheme dracula
-" packadd! codedark
-" colorscheme codedark
+packadd! gruvbox
+
 " needed to improve gruvbox colours
 if (empty($TMUX))
   if (has("termguicolors"))
     set termguicolors
   endif
 endif
-" packadd! gruvbox
+
+" set color scheme
+colorscheme dracula
+" colorscheme distinguished
+" colorscheme vim-code-dark
 " colorscheme gruvbox
-" set background=light
-" packadd! solarized8
-" colorscheme solarized8
+set background=dark
 
 " set syntax highlighting
 syntax enable
@@ -76,6 +78,7 @@ nnoremap <leader>4 4gt
 nnoremap <leader>5 5gt
 
 " jedi-vim settings
+let g:jedi#force_py_version       = 3.11 "system python3 is 3.8 but 3.11 has good features
 let g:jedi#use_splits_not_buffers = "right" "go to, show def, open in split
 let g:jedi#smart_auto_mappings    = 1 "shows completion list for from / import
 let g:jedi#completions_command    = "<C-N>" "overwrites standard autocomplete with jedi-vim
