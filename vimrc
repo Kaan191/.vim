@@ -20,6 +20,7 @@ set background=dark
 " set syntax highlighting
 syntax enable
 set cursorline
+let g:markdown_fenced_languages = ['python', 'bash', 'sql']     " color code blocks in markdown 
 
 " show command in bottom bar
 set showcmd 
