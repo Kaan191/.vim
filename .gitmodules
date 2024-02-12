@@ -43,3 +43,6 @@
 [submodule "pack/ui/opt/vim-distinguished"]
 	path = pack/ui/opt/vim-distinguished
 	url = https://github.com/Lokaltog/vim-distinguished.git
+[submodule "vim-closetag"]
+	path = pack/editing/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
