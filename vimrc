@@ -100,4 +100,5 @@ autocmd BufWritePre *.py %s/\s\+$//e
 " maps autopep8 to F8
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 
-
+" Ctrl + P toggles between paste and nopaste modes
+nnoremap <C-p> :set invpaste<CR>:set paste?<CR>
