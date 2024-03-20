@@ -103,6 +103,9 @@ autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 " Ctrl + P toggles between paste and nopaste modes
 nnoremap <C-p> :set invpaste<CR>:set paste?<CR>
 
+" removes non-breaking space character that raises PEP 8 E262 issue in comments
+nnoremap <leader>w :%s/#[^/w ]/# /gc
+
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
