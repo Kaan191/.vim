@@ -46,3 +46,6 @@
 [submodule "vim-closetag"]
 	path = pack/editing/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
+[submodule "/home/kaan/.vim/pack/editing/start/vim-ai"]
+	path = /home/kaan/.vim/pack/editing/start/vim-ai
+	url = https://github.com/madox2/vim-ai.git
