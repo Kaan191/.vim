@@ -5,13 +5,13 @@ packadd! gruvbox
 
 " needed to improve gruvbox colours
 if (empty($TMUX))
-  if (has("termguicolors"))
+  if (has("termguicolors") && !has('macunix'))
     set termguicolors
   endif
 endif
 
 " set color scheme
-colorscheme dracula
+" colorscheme dracula
 colorscheme distinguished
 " colorscheme vim-code-dark
 " colorscheme gruvbox
