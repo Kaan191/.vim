@@ -1,7 +1,7 @@
 To clone/install recursively:
 
 ```bash
-git clone --recursive ssh://github.com/Kaan191/.vim.git
+git clone --recursive git@github.com:<user>/<repo.git> path/to/repo 
 ```
 
 How to properly add submodules to the .vim repository
@@ -18,3 +18,5 @@ git submodule deinit -f -- <package_name>
 rm -rf .git/modules/pack/<path_to>/start/<package_name>
 git rm -f .vim/pack/start/<path_to>/<package_name>
 ```
+
+For using vim-ai, store an OpenAI token in `~/.config/openai.token`
