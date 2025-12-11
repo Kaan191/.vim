@@ -46,3 +46,6 @@
 [submodule "pack/editing/start/jedi-vim"]
 	path = pack/editing/start/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "pack/editing/start/vim-ai"]
+	path = pack/editing/start/vim-ai
+	url = https://github.com/madox2/vim-ai

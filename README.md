@@ -1,3 +1,9 @@
+To clone/install recursively:
+
+```bash
+git clone --recursive ssh://github.com/Kaan191/.vim.git
+```
+
 How to properly add submodules to the .vim repository
 
 ```bash
