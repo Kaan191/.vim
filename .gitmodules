@@ -13,9 +13,6 @@
 [submodule "/home/pi/.vim/pack/style/start/vim-flake8"]
 	path = /home/pi/.vim/pack/style/start/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
-[submodule "pack/editing/start/jedi-vim"]
-	path = pack/editing/start/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "pack/style/start/vim-flake8/"]
 	path = pack/style/start/vim-flake8/
 	url = https://github.com/nvie/vim-flake8.git
@@ -46,6 +43,6 @@
 [submodule "vim-closetag"]
 	path = pack/editing/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
-[submodule "/home/kaan/.vim/pack/editing/start/vim-ai"]
-	path = /home/kaan/.vim/pack/editing/start/vim-ai
-	url = https://github.com/madox2/vim-ai.git
+[submodule "pack/editing/start/jedi-vim"]
+	path = pack/editing/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
