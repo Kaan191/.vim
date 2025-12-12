@@ -141,19 +141,7 @@ let g:closetag_shortcut = '>'
 " Add > at current position without closing the current tag, default is ''
 let g:closetag_close_shortcut = '<leader>>'
 
-" find a Python binary on the system that is at least Python3.10 (AI Chat plugin requires this to work)
-function! FindPython3()
-    for path in ['python3.13', 'python3.12', 'python3.11', 'python3.10', 'python3']
-        let l:py = exepath(path)
-        if !empty(l:py)
-            return l:py
-        endif
-    endfor
-    return ''
-endfunction
-
-function! Poop()
-    return 'poop'
-endfunction
-
-let g:python3_host_prog = FindPython3()
+" remember that vim-ai requires at least Python3.10 (and vim compiled with it)
+" user-defined "roles" for use with vim-ai (https://github.com/madox2/vim-ai)
+" e.g. for role "local" use `:AIC /local fix this please`
+let g:vim_ai_roles_config_file = '~/.vim/vim-ai-roles.ini'
