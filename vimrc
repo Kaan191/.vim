@@ -145,3 +145,13 @@ let g:closetag_close_shortcut = '<leader>>'
 " user-defined "roles" for use with vim-ai (https://github.com/madox2/vim-ai)
 " e.g. for role "local" use `:AIC /local fix this please`
 let g:vim_ai_roles_config_file = '~/.vim/vim-ai-roles.ini'
+let g:vim_ai_chat = {
+  \   "options": {
+  \     "model": "gpt-6-luna",
+  \   },
+  \ }
+let g:vim_ai_edit = {
+  \   "options": {
+  \     "model": "gpt-6-luna",
+  \   },
+  \ }
