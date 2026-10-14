@@ -148,10 +148,12 @@ let g:vim_ai_roles_config_file = '~/.vim/vim-ai-roles.ini'
 let g:vim_ai_chat = {
   \   "options": {
   \     "model": "gpt-6-luna",
+  \     "temperature": 1,
   \   },
   \ }
 let g:vim_ai_edit = {
   \   "options": {
   \     "model": "gpt-6-luna",
+  \     "temperature": 1,
   \   },
   \ }
