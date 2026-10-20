@@ -149,11 +149,13 @@ let g:vim_ai_chat = {
   \   "options": {
   \     "model": "gpt-6-luna",
   \     "temperature": 1,
+  \     "request_timeout": 60,
   \   },
   \ }
 let g:vim_ai_edit = {
   \   "options": {
   \     "model": "gpt-6-luna",
   \     "temperature": 1,
+  \     "request_timeout": 60,
   \   },
   \ }
